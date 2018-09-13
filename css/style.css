@@ -8,13 +8,15 @@ html, body {
   text-align: center;
   height: 75vh;
   position: relative; }
-  .navbar p {
+  .navbar .logo {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+  .navbar .navButtons {
+    display: none; }
   .navbar span {
     position: absolute;
     top: 95%;
@@ -24,12 +26,21 @@ html, body {
     transform: translate(-50%, -95%); }
 
 .navbarClicked {
-  height: 120px; }
-  .navbarClicked p {
+  height: 70px; }
+  .navbarClicked .logo {
     left: 10%;
+    top: 50%;
     -webkit-transform: translate(-10%, -50%);
     -ms-transform: translate(-10%, -50%);
     transform: translate(-10%, -50%); }
+  .navbarClicked .navButtons {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    -webkit-transform: translate(-90%, -50%);
+    -ms-transform: translate(-90%, -50%);
+    transform: translate(-90%, -50%); }
   .navbarClicked span {
     display: none; }
 
